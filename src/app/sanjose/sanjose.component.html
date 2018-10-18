@@ -1,0 +1,36 @@
+<div class="jumbotron">
+  <div>
+    <form>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">&nbsp;</label>
+        <div class="col-sm-10">
+          <h1>注册</h1>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">username</label>
+        <div class="col-sm-10">
+          <input [value]="username" class="form-control" id="username" placeholder="userName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input [value]="email" class="form-control" id="Email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" [value]="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">&nbsp;</label>
+        <div class="col-sm-10">
+          <button type="submit" (click)=" save() " class="btn btn-primary mb-2 form-control">提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

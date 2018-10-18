@@ -1,0 +1,7 @@
+<div>
+  <h1>父组件</h1>
+  <h5>
+    {{title}}
+  </h5>
+  <app-children3 [childData]="appData" (childEvent) = "fatherFunction($event)"></app-children3>
+</div>

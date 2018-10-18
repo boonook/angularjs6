@@ -1,0 +1,10 @@
+<div>
+  <h3>子组件--{{title}}</h3>
+  <div>
+    <button (click) = "clickThis()">向父组件传值</button>
+  </div>
+  <ul>
+    <li>我是父组件传递过来的数据</li>
+    <li *ngFor="let children of childData; let num1 = index">{{num1}}--{{children}}</li>
+  </ul>
+</div>

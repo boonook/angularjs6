@@ -1,0 +1,9 @@
+<div *ngIf='tutorials'>
+  <h3>Tutorials</h3>
+  <ul>
+    <!-- async 必须有，否则收不到数据了 -->
+    <li (click)="delTutorial(i)" *ngFor="let tutorial of tutorials | async;let i = index">
+      <a [href]="tutorial.url">{{tutorial.name}}</a>
+    </li>
+  </ul>
+</div>
