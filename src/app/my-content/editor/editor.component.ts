@@ -7,16 +7,23 @@ import {EditorConfig} from './model/editor-config';
   styleUrls: ['./editor.component.css']
 })
 export class EditorComponent implements OnInit {
-
-  constructor() { }
   conf = new EditorConfig();
-  markdown = '<h1>测试语句</h1>';
+  markdown = 'z';
+  constructor() {
+  }
+
 
 // 同步属性内容
   syncModel(str): void {
     this.markdown = str;
   }
+  submit(){
+    //获取富文本中的内容
+    alert(this.markdown);
+  }
   ngOnInit() {
+    //设置富文本中的内容
+    this.markdown = 'boonook';
   }
 
 }

@@ -20,7 +20,7 @@ export class HttpService {
     let headers = new Headers();
     headers.append('ApiVersion','v1');
     /**请求头添加结束**/
-    return this._http.post("http://192.168.10.54:3000/api/user?type=register",form,{
+    return this._http.post("http://192.168.10.13:3000/api/user?type=register",form,{
       headers}).map(data=>data.json()).toPromise()
   }
   /**
@@ -29,7 +29,7 @@ export class HttpService {
   login(form){
     let headers = new Headers();
     headers.append('ApiVersion','v1');
-    return this._http.post("http://192.168.10.54:3000/api/user?type=login",form,{
+    return this._http.post("http://192.168.10.13:3000/api/user?type=login",form,{
       headers}).map(data=>data.json()).toPromise()
   }
 }

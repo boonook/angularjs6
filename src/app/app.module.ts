@@ -26,6 +26,7 @@ import { CreateComponent } from './my-content/create/create.component';
 import { MomentComponent } from './my-content/moment/moment.component';
 import { EditorComponent } from './my-content/editor/editor.component';
 import {EditorMdDirective} from './my-content/editor/editor-md.directive';
+import { UploadCallbackComponent } from './upload-callback/upload-callback.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import {EditorMdDirective} from './my-content/editor/editor-md.directive';
     CreateComponent,
     MomentComponent,
     EditorComponent,
-    EditorMdDirective
+    EditorMdDirective,
+    UploadCallbackComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { BurbankComponent } from './burbank/burbank.component';
 import { DallasComponent } from './dallas/dallas.component';
 import { WashingtondcComponent } from './washingtondc/washingtondc.component';
 import { ChicagoComponent } from './chicago/chicago.component';
+import { UploadCallbackComponent } from './upload-callback/upload-callback.component'
 
 const routes: Routes = [
     { path: '', pathMatch: 'full',  redirectTo: '/seattle'},
@@ -14,7 +15,8 @@ const routes: Routes = [
     { path: 'burbank', component: BurbankComponent },
     { path: 'dallas', component: DallasComponent },
     { path: 'washingtondc', component: WashingtondcComponent },
-    { path: 'chicago', component: ChicagoComponent }
+    { path: 'chicago', component: ChicagoComponent },
+    { path: 'upload', component: UploadCallbackComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
